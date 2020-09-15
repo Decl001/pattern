@@ -59,12 +59,6 @@ setup(
              url = "http://www.clips.ua.ac.be/pages/pattern",
         packages = [
         "pattern",
-        "pattern.web",
-        "pattern.web.cache",
-        "pattern.web.imap",
-        "pattern.web.locale",
-        "pattern.web.oauth",
-        "pattern.db",
         "pattern.text",
         "pattern.text.de",
         "pattern.text.en",
@@ -77,14 +71,9 @@ setup(
         "pattern.text.it",
         "pattern.text.nl",
         "pattern.vector",
-        "pattern.vector.svm",
-        "pattern.graph",
-        "pattern.server"
+        "pattern.vector.svm"
     ],
     package_data = {
-        "pattern"                 : ["*.js"],
-        "pattern.web.cache"       : ["tmp/*"],
-        "pattern.web.locale"      : ["*"],
         "pattern.text.de"         : ["*.txt", "*.xml"],
         "pattern.text.en"         : ["*.txt", "*.xml", "*.slp"],
         "pattern.text.en.wordlist": ["*.txt"],
@@ -94,11 +83,7 @@ setup(
         "pattern.text.es"         : ["*.txt", "*.xml"],
         "pattern.text.fr"         : ["*.txt", "*.xml"],
         "pattern.text.it"         : ["*.txt", "*.xml"],
-        "pattern.text.nl"         : ["*.txt", "*.xml"],
-        "pattern.vector"          : ["*.txt"],
-        "pattern.vector.svm"      : ["*.txt"],
-        "pattern.graph"           : ["*.js", "*.csv"],
-        "pattern.server"          : ["static/*"],
+        "pattern.text.nl"         : ["*.txt", "*.xml"]
     },
     py_modules = [
         "pattern.metrics",
@@ -137,7 +122,6 @@ setup(
     install_requires = [
         "future",
         "backports.csv",
-        "mysqlclient",
         "beautifulsoup4",
         "lxml",
         "feedparser",
